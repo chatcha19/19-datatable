@@ -9,6 +9,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
 </head>
     <body>
         <div class="container">
@@ -35,5 +42,82 @@
                 </div>
             </div>
         </div>
+        <div class="container">
+            <div class="card">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                    <table id="example" class="table table-striped" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Position</th>
+                                <th>Office</th>
+                                <th>Age</th>
+                                <th>Start date</th>
+                                <th>Salary</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Kritsakorn Somna</td>
+                                <td>Student</td>
+                                <td>Edinburgh</td>
+                                <td>20</td>
+                                <td>2002-09-02</td>
+                                <td>$320,800</td>
+                            </tr>
+                            <tr>
+                                <td>Vorasat Treamvist</td>
+                                <td>Student</td>
+                                <td>Tokyo</td>
+                                <td>19</td>
+                                <td>2003-05-03</td>
+                                <td>$170,750</td>
+                            </tr>
+                            <tr>
+                                <td>sayaphorn hlongthong</td>
+                                <td>Student</td>
+                                <td>San Francisco</td>
+                                <td>19</td>
+                                <td>2003-05-13</td>
+                                <td>$86,000</td>
+                            </tr>
+                            <tr>
+                                <td>Somphong Duangjun</td>
+                                <td>Student</td>
+                                <td>San Francisco</td>
+                                <td>28</td>
+                                <td>1994-02-20</td>
+                                <td>$86,000</td>
+                            </tr>
+                            <tr>
+                                <td>chatchawarinthan chaithep</td>
+                                <td>Student</td>
+                                <td>San Francisco</td>
+                                <td>20</td>
+                                <td>2002-09-03</td>
+                                <td>$86,000</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>Name</th>
+                                <th>Position</th>
+                                <th>Office</th>
+                                <th>Age</th>
+                                <th>Start date</th>
+                                <th>Salary</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <div class="card-footer">Footer</div>
+              </div>
+        </div>
     </body>
+    <script>
+        $(document).ready(function () {
+            $('#example').DataTable();
+        });
+    </script>
 </html>
